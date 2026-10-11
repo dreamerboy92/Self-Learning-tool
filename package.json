@@ -1,0 +1,12 @@
+{
+  "name": "stet-prep-platform",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Bihar STET / BPSC TRE / UGC NET / GATE CS / College Semester exam-prep platform",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "vercel dev",
+    "check": "node scripts/check-questions.js",
+    "build:single": "node scripts/build-single-file.js"
+  }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CS Exam Prep Platform — STET · TRE · GATE · Semester</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div id="app">
+  <nav class="sidebar" id="sidebar"></nav>
+  <div style="flex:1;min-width:0;display:flex;flex-direction:column;">
+    <div class="mobile-topbar">
+      <div class="b1">📘 STET CS 2026</div>
+      <div style="font-size:12px;opacity:.85;" id="mobileStreak"></div>
+    </div>
+    <main>
+      <div id="profileBar" class="profile-bar"></div>
+      <div id="storageBanner" style="display:none;align-items:center;justify-content:space-between;gap:10px;background:#FFF8E6;border:1px solid #E8C766;color:#8A6D1B;font-size:12.5px;padding:10px 16px;border-radius:10px;margin-bottom:16px;max-width:1080px;margin-left:auto;margin-right:auto;"></div>
+      <div class="container" id="content">
+        <div class="loading">Loading your progress…</div>
+      </div>
+    </main>
+  </div>
+</div>
+<div class="bottomnav" id="bottomnav"></div>
+<div id="modalRoot"></div>
+<div id="camDock" class="cam-dock" style="display:none"><video id="camLive" autoplay muted playsinline></video><div class="cam-rec"><span class="recdot"></span>REC</div></div>
+<div id="guardShield" class="guard-shield" style="display:none">Exam content hidden — return to the exam window to continue.</div>
+<div id="guardWarn" class="guard-warn" style="display:none"></div>
+<div id="wmark" class="wmark" style="display:none"></div>
+<canvas id="confetti" class="confetti-cv" style="display:none"></canvas>
+<div id="popBadge" class="pop-badge" style="display:none"></div>
+<div id="toastBox" class="toast-box" style="display:none"></div>
+<button id="vidyaBtn" class="vidya-btn" title="Ask Vidya, your study assistant">🎓 Ask Vidya</button>
+<div id="vidyaPanel" class="vidya-panel" style="display:none">
+  <div class="vidya-head"><div><b>Vidya</b> · AI Study Assistant</div><div><button id="vidyaClear" class="vidya-x" title="New chat">↺</button><button id="vidyaClose" class="vidya-x" title="Close">✕</button></div></div>
+  <div id="vidyaLog" class="vidya-log"></div>
+  <div class="vidya-in"><input id="vidyaInput" class="input" placeholder="Ask a doubt or a topic…"><button id="vidyaSend" class="btn btn-primary btn-sm">Send</button></div>
+</div>
+
+<script src="js/data/syllabus.js"></script>
+<script src="js/data/questions.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
